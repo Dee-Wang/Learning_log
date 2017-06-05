@@ -1,0 +1,19 @@
+{% extends "learning_logs/base.html" %}
+
+{% block header %}
+  <div class='jumbotron'>
+      <h2>Welcome, Let us record what we have learned!</h2>        
+  </div>
+{% endblock %}
+
+{% block content %}
+  <h3>
+    <p>Let us start !</p>
+  </h3>
+  <br>
+  <h4>    
+    <a href="{% url 'users:register' %}">Register an account</a>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+    <a href="{% url 'users:login' %}">Login your account</a>
+  </h4>
+{% endblock %}
